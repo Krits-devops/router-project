@@ -1,9 +1,9 @@
 import React from 'react'
-import Signup from '../pages/Signup'
-import Login from '../pages/Login'
 import frame from '../assets/frame.png'
+import SignupForm from './SignupForm'
+import LoginForm from './LoginForm'
 
-function template({title, desc1, desc2, image, formtype, setIsLoggedIn}) {
+function Template({title, desc1, desc2, image, formtype, setIsLoggedIn}) {
   return (
     <div>
        
@@ -15,8 +15,8 @@ function template({title, desc1, desc2, image, formtype, setIsLoggedIn}) {
             </p>
 
             {formtype === 'signup' ?
-            (<SignupForm/>) :
-            (<LoginForm/>)
+            (<SignupForm setIsLoggedIn={setIsLoggedIn}/>) :
+            (<LoginForm setIsLoggedIn={setIsLoggedIn}/>)
             }
 
             <div>
@@ -45,4 +45,4 @@ function template({title, desc1, desc2, image, formtype, setIsLoggedIn}) {
   )
 }
 
-export default template
+export default Template;

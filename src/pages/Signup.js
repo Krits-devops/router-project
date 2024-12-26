@@ -1,8 +1,16 @@
 import React from 'react'
+import Template from '../components/Template'
+import signupImg from '../assets/signup.png'
 
-function Signup() {
+function Signup({setIsLoggedIn}) {
   return (
-    <div></div>
+   <Template
+   title= ' sdff'
+   desc1 ='werfewrferf'
+   image={signupImg}
+   formtype='signup'
+   setIsLoggedIn={setIsLoggedIn}
+   />
   )
 }
 
